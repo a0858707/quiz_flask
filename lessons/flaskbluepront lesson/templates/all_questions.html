@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for question in questions %}
+{{ question }} <br>
+<form action="/public-answer" method="post">
+    <textarea name ="answer" cols="30" rows="10"></textarea>
+    <button>ответить</button>
+
+</form>
+{% endfor %}
+</body>
+</html>
